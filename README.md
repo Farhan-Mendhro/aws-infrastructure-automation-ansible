@@ -1,4 +1,4 @@
-# ⚙️ Ansible EC2 Infrastructure Automation
+# ⚙️ AWS-infrastructure-automation-Ansible
 
 > A production-grade Ansible project demonstrating infrastructure provisioning, secure credential management, passwordless SSH configuration, and targeted multi-OS configuration management using loops and conditionals.
 
