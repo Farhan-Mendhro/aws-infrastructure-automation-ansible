@@ -9,7 +9,7 @@
     - name: Create EC2 instances
       amazon.aws.ec2_instance:
         name: "{{ item.name }}"
-        key_name: "my-aws-key"
+        key_name: "shark-key"
         instance_type: t3.micro
         security_group: default
         region: ap-south-1
