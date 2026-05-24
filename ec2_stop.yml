@@ -1,10 +1,16 @@
 ---
 
-- hosts: all
+- name: Target Shutdown - Ubuntu Nodes Only
+  hosts: all
   become: true
 
 
   tasks:
+
+    - name: Gather system facts
+      ansible.builtin.gather_facts:
+
+
     - name: Shutdown ubuntu instances only
       ansible.builtin.command: /sbin/shutdown -t now
       when:
