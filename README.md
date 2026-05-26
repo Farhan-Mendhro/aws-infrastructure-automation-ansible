@@ -107,7 +107,7 @@ aws_secret_key: "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 
 **Step 1 — Create the vault password file**
 ```bash
-echo "your-secure-vault-password" > vault.pass
+openssl rand -base64 2048 > vault.pass
 ```
 
 **Step 2 — Add it to `.gitignore` immediately**
